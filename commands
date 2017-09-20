@@ -39,7 +39,6 @@ system_profiler SPHardwareDataType
 ###DISPLAY FREE DISK SPACE WITH HUMAN READABLE
 df -H
 
-
 ###REMOVES SPOTLIGHT CACHE FOR REINDEXING
 mdutil -E /
 
