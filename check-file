@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# This script will determine if jovanhernandez has superimportantfile.txt in his Documents folder. 
+#
+# Setup initial variables
+filePath="/Users/jovanhernandez/Documents/superimportantfile.txt" 
+currentLoggedInUser=`whoami`
+
+if [[ $currentLoggedInUser = "jovanhernandez" ]]; then
+    echo "Logged in user is jovanhernandez. Good."
+    else echo "Logged in user is NOT jovanhernandez. This is not good."
+    exit 1 
+    # This will exit the script if it is not run as jovanhernandez.
+fi
+
+# This statement checks to see if $filePath exists as a regular file, and backs up the file.
+if [[ -f $filePath ]]; then
+    echo "superimportantfile.txt exists at $filePath. Copying to folder Backups"
+    cp $filePath /Users/jovanhernandez/Backups/
+    else echo "superimportantfile.txt does not exist. Cannot backup."
+fi  
