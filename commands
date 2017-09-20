@@ -1,0 +1,45 @@
+###TERMINAL COMMANDS I USE OFTEN FOR REPORTING AND DATA GATHERING AS A MAC SYSADMIN.
+
+###ENABLE SSH
+sudo systemsetup -setremotelogin on
+
+###KICKSTART ARD FOR ALL USERS 
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -allowAccessFor -allUsersto-privs -all -clientopts -setmenuextra -menuextra yes 
+
+###CHECK DISK USAGE FOR FOLDERS IN HOME FOLDER 
+sudo du -sh ./* 
+
+###CHECK DISK FREE SPACE FOR VOLUMES 
+df -ha 
+
+###CHECK UPTIME
+uptime
+
+###CHECK DNS ON LOCAL MACHINE
+cat /etc/resolv.conf
+
+###RUN IPCONFIG LIKE IN WINDOWS TO GET MORE DETAILED NETWORK INFO
+ipconfig getpacket en0
+
+###LIST ALL SOFTWARE UPDATES
+softwareupdate -l
+
+###OPEN PWD
+open .
+
+###PING ALL DEVICES ON YOUR SUBNET
+ping 224.0.0.1
+
+###DISPLAYS THE CURRENTLY INSTALLED VERSION AND BUILD OF MACOS X
+sw_vers
+
+###PROVIDES INFORMATION OF SYSTEM HARDWARE
+system_profiler SPHardwareDataType
+
+###DISPLAY FREE DISK SPACE WITH HUMAN READABLE
+df -H
+
+
+###REMOVES SPOTLIGHT CACHE FOR REINDEXING
+mdutil -E /
+
