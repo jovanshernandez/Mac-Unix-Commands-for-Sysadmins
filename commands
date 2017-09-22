@@ -44,3 +44,9 @@ $ mdutil -E /
 
 ###INSTALL FILETREE COMMAND ALIAS
 $ alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
+
+###To open a directory in a Finder window:
+$ open /Users/mel/Documents
+
+###Open an application (case doesn't matter):
+$ open itunes
