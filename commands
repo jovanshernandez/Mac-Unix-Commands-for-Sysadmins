@@ -1,52 +1,52 @@
-###TERMINAL COMMANDS I USE OFTEN FOR REPORTING AND DATA GATHERING AS A MAC SYSADMIN.
+###terminal commands i use often for reporting and data gathering as a mac sysadmin.
 
-###ENABLE SSH
+###enable ssh
 $ sudo systemsetup -setremotelogin on
 
-###KICKSTART ARD FOR ALL USERS 
-$ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -allowAccessFor -allUsersto-privs -all -clientopts -setmenuextra -menuextra yes 
+###kickstart ard for all users 
+$ sudo /system/library/coreservices/remotemanagement/ardagent.app/contents/resources/kickstart -activate -configure -allowaccessfor -allusersto-privs -all -clientopts -setmenuextra -menuextra yes 
 
-###CHECK DISK USAGE FOR FOLDERS IN HOME FOLDER 
+###check disk usage for folders in home folder 
 $ sudo du -sh ./* 
 
-###CHECK DISK FREE SPACE FOR VOLUMES 
+###check disk free space for volumes 
 $ df -ha 
 
-###CHECK UPTIME
+###check uptime
 $ uptime
 
-###CHECK DNS ON LOCAL MACHINE
+###check dns on local machine
 $ cat /etc/resolv.conf
 
-###RUN IPCONFIG LIKE IN WINDOWS TO GET MORE DETAILED NETWORK INFO
+###run ipconfig like in windows to get more detailed network info
 $ ipconfig getpacket en0
 
-###LIST ALL SOFTWARE UPDATES
+###list all software updates
 $ softwareupdate -l
 
-###OPEN PWD
+###open pwd
 $ open .
 
-###PING ALL DEVICES ON YOUR SUBNET
+###ping all devices on your subnet
 $ ping 224.0.0.1
 
-###DISPLAYS THE CURRENTLY INSTALLED VERSION AND BUILD OF MACOS X
+###displays the currently installed version and build of macos x
 $ sw_vers
 
-###PROVIDES INFORMATION OF SYSTEM HARDWARE
-$ system_profiler SPHardwareDataType
+###provides information of system hardware
+$ system_profiler sphardwaredatatype
 
-###DISPLAY FREE DISK SPACE WITH HUMAN READABLE
-$ df -H
+###display free disk space with human readable
+$ df -h
 
-###REMOVES SPOTLIGHT CACHE FOR REINDEXING
-$ mdutil -E /
+###removes spotlight cache for reindexing
+$ mdutil -e /
 
-###INSTALL FILETREE COMMAND ALIAS
-$ alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
+###install filetree command alias
+$ alias filetree="ls -r | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'" 
 
-###To open a directory in a Finder window:
-$ open /Users/mel/Documents
+###to open a directory in a finder window:
+$ open /users/mel/documents
 
-###Open an application (case doesn't matter):
+###open an application (case doesn't matter):
 $ open itunes
