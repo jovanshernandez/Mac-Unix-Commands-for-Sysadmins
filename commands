@@ -50,3 +50,7 @@ $ open /users/mel/documents
 
 ###open an application (case doesn't matter):
 $ open itunes
+
+###and to turn wi-fi on or off: 
+$ networksetup -setairportpower airport on 
+$ networksetup -setairportpower airport off
